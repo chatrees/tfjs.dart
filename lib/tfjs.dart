@@ -1,8 +1,8 @@
 /// Support for doing something awesome.
 ///
 /// More dartdocs go here.
-library tensorflowjs;
+library tfjs;
 
-export 'src/tensorflowjs_base.dart';
+export 'src/tfjs_base.dart';
 
 // TODO: Export any libraries intended for clients of this package.
