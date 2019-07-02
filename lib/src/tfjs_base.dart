@@ -71,6 +71,32 @@ class Sequential extends Model {
 @JS()
 @anonymous
 class Tensor {
+  external dynamic flatten();
+  external dynamic asScalar();
+  external dynamic as1D();
+  external dynamic as2D(int rows, int columns);
+  external dynamic as3D(int rows, int columns, int depth);
+  external dynamic as4D(int rows, int columns, int depth, int depth2);
+  external dynamic as5D(int rows, int columns, int depth, int depth2, int depth3);
+  external Tensor asType(String dtype);
+  external dynamic buffer();
+  external dynamic bufferSync();
+  external dynamic array();
+  external dynamic arraySync();
+  external dynamic data();
+  external dynamic dataSync();
+  external dynamic dispose();
+  external dynamic toFloat();
+  external dynamic toInt();
+  external dynamic toBool();
+  external dynamic print(bool verbose);
+  external dynamic reshape(List<int> newShape);
+  external Tensor reshapeAs(Tensor tensor);
+  external Tensor expandDims(int axis);
+  external Tensor cumsum(int axis, bool exclusive, bool reverse);
+  external Tensor squeeze(List<int> axis);
+  external Tensor clone();
+  external String toString();
   external Tensor div(Tensor tensor);
   external Tensor max();
   external Tensor min();
